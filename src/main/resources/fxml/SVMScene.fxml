@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="fxPaneSVMSettings" prefHeight="429.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ceost.learn_sits.SVMSceneController">
+    <children>
+        <VBox layoutX="6.0" prefHeight="429.0" prefWidth="381.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" text="SVM settings">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Broadway" size="18.0" />
+                    </font>
+                </Label>
+                <Separator prefWidth="200.0" />
+            <HBox prefHeight="352.0" prefWidth="395.0">
+               <children>
+                      <GridPane prefHeight="352.0" prefWidth="199.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                          <children>
+                              <Label text="SVM type" GridPane.halignment="RIGHT">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </GridPane.margin>
+                              </Label>
+                              <Label text="Kernel type" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </GridPane.margin>
+                              </Label>
+                              <Label text="Degree" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </GridPane.margin>
+                              </Label>
+                              <Label text="Gamma" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <Label text="Coef0" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <Label text="Nu" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <Label text="Cache size (MB)" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <Label text="C" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <Label text="Eps" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <Label text="P" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <Label text="Shrinking" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <Label text="Probability" GridPane.halignment="RIGHT" GridPane.rowIndex="11">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <Label text="# of weights" GridPane.halignment="RIGHT" GridPane.rowIndex="12">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <ComboBox fx:id="fxComboBoxSVMType" prefWidth="150.0" GridPane.columnIndex="1">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </ComboBox>
+                              <ComboBox fx:id="fxComboBoxKernelType" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </ComboBox>
+                              <Spinner fx:id="fxSpinnerDegree" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                                  
+                              </Spinner>
+                              <TextField fx:id="fxTextFieldGamma" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="fxTextFieldCoef" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="fxTextFieldNu" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="fxTextFieldCache" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="fxTextFieldC" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="fxTextFieldEps" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="fxTextFieldP" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </TextField>
+                              <ComboBox fx:id="fxComboBoxShrinking" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </ComboBox>
+                              <ComboBox fx:id="fxComboBoxProbability" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </ComboBox>
+                              <Spinner fx:id="fxSpinnerNoWeights" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                                  <GridPane.margin>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </GridPane.margin>
+                              </Spinner>
+                          </children>
+                      </GridPane>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox prefHeight="352.0" prefWidth="161.0">
+                     <children>
+                        <Label text="Choose the class of interest ">
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="(for one-class SVM)">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ComboBox fx:id="fxComboBoxClassOfInterest" onAction="#validateAndShowInfo" prefWidth="150.0">
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                        <Label fx:id="fxLabelNofPositives">
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="5.0" right="2.0" top="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fxLabelNofNegatives">
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="5.0" right="2.0" top="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="fxLabelError">
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="5.0" right="2.0" top="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label text="Feature used">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ComboBox fx:id="fxComboBoxFeatures" prefWidth="150.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                        <CheckBox fx:id="fxCheckBoxNormalize" mnemonicParsing="false" text="Normalize">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <CheckBox fx:id="fxCheckBoxPCA" mnemonicParsing="false" text="PCA">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                              <TextField fx:id="fxTextFieldPCAComponents" prefHeight="31.0" prefWidth="30.0">
+                                 <HBox.margin>
+                                    <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label text="comp">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <CheckBox fx:id="fxCheckBoxFilterResults" mnemonicParsing="false" text="Filter results">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Threshold: ">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="fxTextFieldThreshold" prefHeight="31.0" prefWidth="57.0">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+                <Separator prefWidth="200.0" />
+                <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="41.0" prefWidth="390.0">
+                    <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="155.0" right="15.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="fxButtonTrain" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#train" text="Train">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

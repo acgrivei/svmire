@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="262.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ceost.learn_sits.ClassesEditorSceneController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="NEVER" maxWidth="385.0" minWidth="10.0" prefWidth="175.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="69.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="77.0" minHeight="8.0" prefHeight="20.0" vgrow="NEVER" />
+    <RowConstraints maxHeight="339.0" minHeight="10.0" prefHeight="338.0" vgrow="NEVER" />
+    <RowConstraints maxHeight="123.0" minHeight="0.0" prefHeight="29.0" vgrow="NEVER" />
+  </rowConstraints>
+   <children>
+      <ListView id="fxListViewClasses" fx:id="fxClasesList" prefHeight="329.0" prefWidth="165.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </ListView>
+      <Button id="fxButtonClassRemove" fx:id="fxButtonRemove" contentDisplay="CENTER" mnemonicParsing="false" onAction="#removeClass" text="Remove" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="5.0" top="-300.0" />
+         </GridPane.margin>
+      </Button>
+      <TextField id="fxTextFieldClassAdd" fx:id="fxTextField" onAction="#addClass" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button id="fxButtonAddClass" fx:id="fxButtonAddClass" mnemonicParsing="false" onAction="#addClass" text="Add class" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Button>
+      <Label text="Classes">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>

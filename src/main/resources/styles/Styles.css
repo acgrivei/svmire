@@ -1,0 +1,7 @@
+.button {
+    -fx-font-weight: bold;
+}
+
+.errorTextField {
+    -fx-background-color: #ffbbbb;
+}
